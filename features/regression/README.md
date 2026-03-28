@@ -185,3 +185,8 @@ uvicorn regression.main:app --reload --port 8001
 ```
 
 Open `http://127.0.0.1:8001`. Enter a User ID and Movie ID, pick a model, and see the predicted rating alongside the actual rating (if it exists in the dataset).
+
+
+http://127.0.0.1:8000/regression/predict?user_id=1&movie_id=10&model=ridge
+http://127.0.0.1:8000/regression/predict?user_id=1&movie_id=10&model=random_forest
+http://127.0.0.1:8000/regression/predict?user_id=1&movie_id=10&model=xgboost
